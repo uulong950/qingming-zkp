@@ -10,7 +10,7 @@
 
 ## 🛑 What is NOT in this Repo?
 
-The core **Qingming L0 Engine** (`libqingming.so`) and the underlying mathematical topology are **AIRGAPPED**. 
+The core **Qingming ZKP Engine** (`libqingming.so`) and the underlying mathematical topology are **AIRGAPPED**. 
 You cannot run the GPU benchmarks locally without the proprietary hardware-bound binary. 
 
 **This repo serves as a "Truth Detector."** Clone it. Run the CPU baseline on your $50,000 dual-EPYC servers. Realize the magnitude of the 319x gap.
