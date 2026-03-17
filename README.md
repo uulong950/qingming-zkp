@@ -22,7 +22,7 @@ Ensure you have Rust (Nightly preferred) installed.
 ```bash
 # Clone the harness
 git clone [https://github.com/uulong950/qingming-zkp](https://github.com/uulong950/qingming-zkp)
-cd qingming-zkp-rs
+cd qingming-zkp
 
 # Run the CPU baseline to verify math and establish your local speed reference
 cargo run --release
