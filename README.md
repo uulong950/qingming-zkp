@@ -38,18 +38,21 @@ One-click comparison of CPU and GPU performance differences at extreme scales:
 ```bash
 cargo run --release -- all
 ```
+<img width="1233" height="1073" alt="all" src="https://github.com/user-attachments/assets/415cdc2c-47ba-45d1-8a17-b61e4e0ce975" />
 
 ### 3.2 Run Pure GPU Saturation Test (GPU)
 Directly invoke the low-level `libqingming.so` to experience the extreme speed of a saturated 96MB Infinity Cache:
 ```bash
 cargo run --release -- gpu
 ```
+<img width="1245" height="518" alt="gpu" src="https://github.com/user-attachments/assets/42a653da-5665-4ebb-a720-b7424145672f" />
 
 ### 3.3 Run Pure CPU Baseline Test (CPU)
 View the traditional baseline latency without GPU acceleration:
 ```bash
 cargo run --release -- cpu
 ```
+<img width="1236" height="535" alt="cpu" src="https://github.com/user-attachments/assets/0ab3ec8c-3937-4225-a765-82c0d1704046" />
 
 ---
 
