@@ -1,0 +1,22 @@
+[package]
+name = "qingming-zkp-rs"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+description = "Bare-metal AMD GPU accelerator for ZK-STARK/FRI. Breaking the memory wall."
+authors = ["uulong950 <zhangxiaolong950@gmail.com>"] 
+repository = "https://github.com/uulong950/qingming-zkp"
+keywords = ["zkp", "cryptography", "gpu", "stark", "rocm"]
+categories = ["cryptography", "science", "hardware-support"]
+
+[dependencies]
+# FFI 
+libc = "0.2" 
+
+# --- [rust complie] ---
+[profile.release]
+opt-level = 3          # 开启最高级别优化
+lto = "fat"            # 开启跨 Crate 链接期全量优化 (极其关键)
+codegen-units = 1      # 强制单线程生成代码，牺牲编译时间换取极致运行性能
+panic = "abort"        # 遇到 panic 直接终止，减少二进制文件体积和开销
